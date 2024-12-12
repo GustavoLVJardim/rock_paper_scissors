@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Rock Paper Scissors</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
 </head>
 <body>
+    <header>
+        <h1>Welcome to the game of Rock, Paper, Scissors!!</h1>
+    </header>
     
+    <section>
+        <h3>Choose:</h3>
+        <div class="container">
+            <input alt="rock" type="image" src="rock.jpg" id="btn-rock" value="rock" class="choice-btn">
+            <input alt="paper" type="image" src="paper.jpg" id="btn-paper" value="paper" class="choice-btn">
+            <input alt="scissor" type="image" src="scissor.jpg" id="btn-scissor" value="scissor" class="choice-btn">
+        </div>
+        
+        <!-- Div para mensagens do jogo -->
+        <div id="game-messages">
+            <p id="round-message"></p>
+        </div>
+        
+        <!-- Contêiner para elementos dinâmicos -->
+        <div id="dynamic-container"></div>
+
+        <!-- Div para retornar o resultado após 5 rodadas -->
+        <div id="score-container"></div>
+    </section>
 </body>
 </html>
